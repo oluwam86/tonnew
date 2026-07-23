@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonviewer - Blockchain Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 36" fill="none">
+                        <path fill="rgb(46,95,220)" d="M16,-18 C16,-18 0,18 0,18 C0,18 16.007999420166016,18.007999420166016 16.007999420166016,18.007999420166016 C16.007999420166016,18.007999420166016 16,-18 16,-18z"/>
+                    </svg>
+                    <span>Tonviewer</span>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-connect">Connect Wallet</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <span>Main</span>
+                <span>›</span>
+                <span>UQAWb-a4D36U57E29EQp49pWTIOxqFDyKCCpZ7H_hTnfVhh</span>
+            </div>
+
+            <!-- Wallet Info Card -->
+            <div class="wallet-card">
+                <div class="wallet-info">
+                    <div class="info-item">
+                        <label>Address</label>
+                        <code class="address">UQAWb-a4D36U57E29EQp49pWTIOxqFDyKCCpZ7H_hTnfVhh</code>
+                    </div>
+                    <div class="info-item">
+                        <label>Balance</label>
+                        <div class="balance">0.229 GRAM <span class="prev">(prev. TON)</span> ≈ $0.34484</div>
+                    </div>
+                    <div class="info-item">
+                        <label>Contract Type</label>
+                        <span>wallet_v5r1</span>
+                    </div>
+                    <div class="info-item">
+                        <label class="status-label">
+                            <span class="status-dot"></span> Active
+                        </label>
+                        <div class="info-details">
+                            <code class="hash">0i16E...4e77d</code>
+                            <a href="#" class="link">toncoin.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="qr-code">
+                    <svg width="150" height="150" viewBox="0 0 150 150" fill="none">
+                        <rect width="150" height="150" fill="white"/>
+                        <g fill="black">
+                            <!-- QR pattern (simplified) -->
+                            <rect x="10" y="10" width="40" height="40"/>
+                            <rect x="100" y="10" width="40" height="40"/>
+                            <rect x="10" y="100" width="40" height="40"/>
+                            <!-- Random dots for pattern -->
+                            <circle cx="30" cy="50" r="3"/>
+                            <circle cx="120" cy="50" r="3"/>
+                            <circle cx="50" cy="30" r="3"/>
+                            <circle cx="75" cy="75" r="3"/>
+                            <circle cx="60" cy="60" r="3"/>
+                            <circle cx="40" cy="120" r="3"/>
+                            <circle cx="100" cy="100" r="3"/>
+                            <circle cx="130" cy="130" r="3"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active">History</button>
+                <button class="tab">Raw Transactions</button>
+                <button class="tab">Tokens <span class="badge">1</span></button>
+                <button class="tab">Code</button>
+                <button class="tab">Methods</button>
+                <button class="tab">Send Message</button>
+            </div>
+
+            <!-- Transaction History -->
+            <div class="transactions">
+                <div class="transaction-header">
+                    <select class="select-filter">
+                        <option>Token</option>
+                    </select>
+                    <select class="select-filter">
+                        <option>Sort</option>
+                    </select>
+                    <select class="select-filter">
+                        <option>Date</option>
+                    </select>
+                </div>
+
+                <div class="transaction-list">
+                    <!-- Transaction 1 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">16 Jul 17:56</div>
+                        <div class="tx-action">↑ Send token</div>
+                        <div class="tx-hash">
+                            <code>UQBBKomy...wKm5Lqgc</code>
+                        </div>
+                        <div class="tx-amount negative">−2.06 USDT</div>
+                    </div>
+
+                    <!-- Transaction 2 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">16 Jul 17:48</div>
+                        <div class="tx-action">↓ Received token</div>
+                        <div class="tx-hash">
+                            <code>soulfarmbot.ton</code>
+                        </div>
+                        <div class="tx-amount positive">+1.01 USDT</div>
+                    </div>
+
+                    <!-- Transaction 3 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">10 Jul 10:40</div>
+                        <div class="tx-action">↓ Received token</div>
+                        <div class="tx-hash">
+                            <code>soulfarmbot.ton</code>
+                        </div>
+                        <div class="tx-amount positive">+1.05 USDT</div>
+                    </div>
+
+                    <!-- Transaction 4 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">03 Jul 19:38</div>
+                        <div class="tx-action">↑ Sent GRAM</div>
+                        <div class="tx-hash">
+                            <code>UQDv1BTx...BwMhzabn</code>
+                        </div>
+                        <div class="tx-amount negative">−0.3 GRAM</div>
+                    </div>
+
+                    <!-- Transaction 5 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">03 Jul 19:37</div>
+                        <div class="tx-action">↑ Sent GRAM</div>
+                        <div class="tx-hash">
+                            <code>UQDv1BTx...BwMhzabn</code>
+                        </div>
+                        <div class="tx-amount negative">−0.3 GRAM</div>
+                    </div>
+
+                    <!-- Transaction 6 - Failed -->
+                    <div class="transaction-item failed">
+                        <div class="tx-time">03 Jul 16:38</div>
+                        <div class="tx-action">↑ Send token <span class="failed-badge">Failed</span></div>
+                        <div class="tx-hash">
+                            <code>UQBRP08y...w3FVcvMX</code>
+                            <span class="tx-memo">BMB-cmr53jvgp1rd001lesazrzk6</span>
+                        </div>
+                        <div class="tx-amount negative">−4.99 USDT</div>
+                    </div>
+
+                    <!-- Transaction 7 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">03 Jul 16:35</div>
+                        <div class="tx-action">↓ Received GRAM</div>
+                        <div class="tx-hash">
+                            <code>EQCdLs7u...T20I03Lk</code>
+                        </div>
+                        <div class="tx-amount positive">+0.0999 GRAM</div>
+                    </div>
+
+                    <!-- Transaction 8 - Failed -->
+                    <div class="transaction-item failed">
+                        <div class="tx-time">03 Jul 16:35</div>
+                        <div class="tx-action">↑ Send token <span class="failed-badge">Failed</span></div>
+                        <div class="tx-hash">
+                            <code>UQBRP08y...w3FVcvMX</code>
+                            <span class="tx-memo">BMB-cmr53hb4f1q3801leij2g7f</span>
+                        </div>
+                        <div class="tx-amount negative">−4.99 USDT</div>
+                    </div>
+
+                    <!-- Transaction 9 -->
+                    <div class="transaction-item">
+                        <div class="tx-time">03 Jul 16:35</div>
+                        <div class="tx-action">↓ Received GRAM</div>
+                        <div class="tx-hash">
+                            <code>EQCdLs7u...T20I03Lk</code>
+                        </div>
+                        <div class="tx-amount positive">+0.0999 GRAM</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
